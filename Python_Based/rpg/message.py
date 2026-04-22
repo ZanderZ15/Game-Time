@@ -1,6 +1,6 @@
 class Message:
-    message = "Sup brother"
-
+    message = "sigma phony zebras"
+    
     def Call_Sign(self):
         print(self.message)
 
