@@ -4,7 +4,10 @@ import logging
 
 import message
 import logger
+import engine
 
+
+#SCREEN SET UP
 root = Tk()
 root.minsize(500, 500)
 
@@ -59,4 +62,15 @@ quit_button = ttk.Button(
     command=root.destroy
 ).grid(column=2, row=2, padx=5)
 
+game = engine.Game()
+play_button = ttk.Button(
+    frame, 
+    text="Play", 
+    command=game.start
+).grid(column=2, row=3, padx=5)
+
+
 root.mainloop()  # starts listening
+
+
+

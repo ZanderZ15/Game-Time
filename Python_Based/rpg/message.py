@@ -20,4 +20,4 @@ class Message:
             # Optional: Clear the input text box after saving
             entry_widget.delete(0, END)
         else:
-            logging.info("No Message Found")
+            logging.error("No Message Found")
